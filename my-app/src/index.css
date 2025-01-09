@@ -1,0 +1,113 @@
+/* General styles for the whole page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Banner section */
+#banner {
+  background: linear-gradient(#022a1d,rgba(201, 218, 12, 0.5)), url("https://img.pikbest.com/backgrounds/20190319/aloe-vera-skin-care-product-black-psd-layered-main-picture-background-image_1809192.jpg!bw700");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+  padding: 10px 20px;
+  position: relative;
+  height: 80px;
+}
+
+/* Logo styling */
+.logo {
+  height: 100px;
+  margin-right: 50px;
+}
+
+/* Navigation items styling */
+.nav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* List item styling */
+.nav li {
+  margin: 0 15px;
+}
+
+/* Link styling */
+.nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for links */
+.nav li a:hover {
+  background-color: rgba(87, 87, 87, 0.7);
+  border-radius: 5px;
+}
+
+/* Navbar overlay */
+.navbar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+/* Banner text styling */
+.banner-text {
+  text-align: center;
+  color: #fff;
+  padding-top: 180px;
+}
+
+.banner-text h1 {
+  font-size: 80px;
+  font-family: Trattatello;
+}
+
+.banner-text p {
+  font-size: 30px;
+  font-style: italic;
+  font-family: Fantasy;
+}
+
+/* Social links styling */
+.social-links {
+  text-align: center;
+}
+
+.social-img {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  border: 1px solid #009688;
+  margin: 40px 5px 0;
+  color: #009688;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.social-img:hover {
+  background: #009688;
+  color: #fff;
+  transform: translateY(-7px);
+}
