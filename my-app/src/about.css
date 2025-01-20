@@ -1,110 +1,49 @@
-
-#about {
-    width: 100%;
-    height: 100vh;
-    background: black;
-}
-
-.title h1 {
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 2%;
-}
-
-.title p {
-    font-size: 15px;
-    text-align: center;
-}
-
-.feature-box {
-    padding-top: 9%;
-    width: 90%;
-    margin: auto;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .about-us-container {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-}
-
-.features {
-    flex-basis: 50%;
-}
-
-.features-img {
-    flex-basis: 50%;
-    margin: auto;
-}
-
-.features-img img {
-    width: 70%;
-    height: 70%;
-}
-
-.features h1 {
+    padding: 20px;
+  }
+  
+  .left-side {
+    flex: 1;
+    padding: 20px;
     text-align: left;
-    font-size: 28px;
-    margin-bottom: 10px;
-    font-weight: 250;
-    font-family: American Typewriter;
-}
-
-.features-desc {
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 40px;
-}
-
-.feature-text p {
-    padding: 0 20px;
-    text-align: justify;
-    font-size: 18px;
-    font-family: Times New Roman;
-}
-
-@media screen and (max-width: 770px) {
-    .title-text h1 {
-        font-size: 35px;
-    }
-
-    .fearures {
-        flex-basis: 100%;
-    }
-
-    .features-img {
-        flex-basis: 100%;
-    }
-
-    .features-img img {
-        width: 40%;
-        height: 40%;
-    }
-
-    .title h1 {
-        font-size: 20px;
-    }
-
-    .title p {
-        text-align: center;
-        font-size: 7px;
-    }
-
-    .feature-box {
-        width: 100%;
-        margin: 4px 4px;
-    }
-
-    .features h1 {
-        font-size: 15px;
-        font-weight: 120;
-    }
-
-    .feature-text p {
-        font-size: 10px;
-    }
-
-    .features-desc {
-        display: flex;
-        margin-bottom: 20px;
-    }
-}
+  }
+  
+  .right-side {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .about-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  

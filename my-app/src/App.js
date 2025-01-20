@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.css';
 import logoImage from './images/logo.png'; // Import the logo image
-import about from './about'; // Ensure the path is correct
-
+import { Link } from 'react-router-dom'; // Import Link for navigation
 
 const App = () => {
   return (
@@ -12,7 +11,7 @@ const App = () => {
           <img src={logoImage} className="logo" alt="Logo" /> {/* Use the imported image */}
           <ul className="nav">
             <li><a href="find-more.html">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><Link to="/about">About</Link></li> {/* Link to About page using React Router */}
             <li><a href="#products">Products</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#order-now">Order Now</a></li>
@@ -57,3 +56,4 @@ const App = () => {
 };
 
 export default App;
+
