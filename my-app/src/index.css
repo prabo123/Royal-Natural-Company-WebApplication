@@ -7,7 +7,7 @@
 
 /* Banner section */
 #banner {
-  background: linear-gradient(#022a1d,rgba(201, 218, 12, 0.5)), url("https://img.pikbest.com/backgrounds/20190319/aloe-vera-skin-care-product-black-psd-layered-main-picture-background-image_1809192.jpg!bw700");
+  background: linear-gradient(#1e5036,rgba(22, 22, 16, 0.5)), url("images/back1.png");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -48,7 +48,7 @@
 .nav li a {
   color: white;
   text-decoration: none;
-  font-size: 26px;
+  font-size: 22px;
   padding: 10px 15px;
   transition: background-color 0.3s ease;
 }
