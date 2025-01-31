@@ -1,0 +1,342 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 60vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* General styles for the whole page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Banner section */
+#banner {
+  background: linear-gradient(#132019,rgba(58, 58, 53, 0.5)), url("images/alo.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+  padding: 0px 0px;
+  position: relative;
+  height: 80px;
+ 
+}
+
+/* Logo styling */
+.logo {
+  height: 100px;
+  margin-right: 50px;
+}
+
+/* Navigation items styling */
+.nav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* List item styling */
+.nav li {
+  margin: 0 15px;
+}
+
+/* Link styling */
+.nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for links */
+.nav li a:hover {
+  background-color: rgba(87, 87, 87, 0.7);
+  border-radius: 5px;
+}
+
+/* Navbar overlay */
+.navbar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+/* Banner text styling */
+.banner-text {
+  text-align: center;
+  color: #fff;
+  padding-top: 180px;
+}
+
+.banner-text h1 {
+  font-size: 80px;
+  font-family: Trattatello;
+}
+
+.banner-text p {
+  font-size: 30px;
+  font-style: italic;
+  font-family: Fantasy;
+}
+
+/* Social links styling */
+.social-links {
+  text-align: center;
+}
+
+.social-img {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  border: 1px solid #009688;
+  margin: 40px 5px 0;
+  color: #009688;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.social-img:hover {
+  background: #009688;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+/* Product Section */
+#products {
+  padding: 80px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.product-column-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px;
+  justify-items: center;
+}
+
+.product-card {
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-title {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: #218838;
+}
+
+/* Responsive for smaller screens (adjust to 2 columns on medium screens) */
+@media (max-width: 1200px) {
+  .product-column-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+/* Further responsiveness (adjust to 1 column on small screens) */
+@media (max-width: 768px) {
+  .product-column-container {
+    grid-template-columns: 1fr; /* 1 column */
+  }
+}
+
+
+/* Contact Section */
+#contact {
+  padding: 40px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.contact-column-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px;
+  justify-items: center;
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details {
+  font-size: 1rem;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.contact-form button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact-form button:hover {
+  background-color: #218838;
+}
+
+/* Responsive for smaller screens (adjust to 1 column on medium screens) */
+@media (max-width: 1200px) {
+  .contact-column-container {
+    grid-template-columns: 1fr; /* 1 column */
+  }
+}
+
+/* Contact Section */
+#contact {
+  padding: 40px;
+  background-color: #e4ece6; /* Green background */
+  color: rgb(32, 28, 28); /* White text */
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: rgb(21, 21, 21); /* Ensure the section title is white */
+}
+
+.contact-column-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px;
+  justify-items: center;
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details {
+  font-size: 1rem;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #333;
+}
+
+.contact-form button {
+  background-color: #218838; /* Darker green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact-form button:hover {
+  background-color: #1c7a2e;
+}
+
+/* Responsive for smaller screens (adjust to 1 column on medium screens) */
+@media (max-width: 1200px) {
+  .contact-column-container {
+    grid-template-columns: 1fr; /* 1 column */
+  }
+}
+
+/* Footer Section */
+footer {
+  background-color: #222; /* Dark background */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #adb7b0; /* Green color for links */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
